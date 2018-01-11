@@ -1,0 +1,27 @@
+<% layout("layout") -%>
+    <header>
+        <h1>
+            Welcome
+            <span id="userName">
+                <%= user.name %>
+            </span>
+            
+        </h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="chat col-md-9">
+                <p id='chatMsg'></p>
+                <p class="fixed-bottom" id='write'></p>
+            </div>
+            <div class="online col-md-3">
+                <h3>Users online</h3>
+                <%= users %>
+            </div>
+        </div>
+    </div>
+
+    <form action="" class="fixed-bottom">
+        <input id="inpMsg" type="text" placeholder='Write message ...'>
+        <button id="btnSend">Send</button>
+    </form>

@@ -1,0 +1,210 @@
+
+body{
+  background-color:black;
+  color: rgb(47, 219, 9);
+  font-size: 35px;
+  text-shadow: -8px 8px 20px rgba(0, 255, 21, 0.651);
+}
+
+h1{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bolder;
+	margin: 50px;
+}
+.btns{
+	text-align: center;
+	margin-top: 200px;
+}
+
+input{
+	width: 100%;
+	height: 45px;
+	border-radius: 10px;
+	text-indent: 20px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	 
+}
+button{
+	height:100px;
+	width:300px;
+	font-size: 45px;
+	color:white;
+	background-color: red;
+	border:none;
+	margin:50px;
+	border-radius: 200px;
+	font-weight: bold;
+	box-shadow: inset 0px 0px 80px rgb(0, 0, 0) ;
+}
+#singIn{
+	background-color: rgb(0, 102, 255);
+}
+#singIn:hover{
+	box-shadow:  0px 0px 60px rgb(0, 174, 255) ;
+}
+button:hover{
+	box-shadow:  0px 0px 60px rgb(255, 0, 0) ;
+	cursor: pointer;
+}
+#regForm input:focus{
+	box-shadow: 0px 0px 80px rgba(1, 255, 56, 0.897) ;
+}
+button:focus, input:focus{
+	outline: none;
+}
+input[name="gender"]{
+	width: 30px;
+	height: 30px;
+	margin: 15px;
+}
+#regForm{
+	width: 50%;
+	padding: 80px;
+	box-shadow: inset 0px 0px 100px rgba(1, 255, 56, 0.897) ;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.89);
+	display:none;
+	position: absolute;
+	z-index: 2;
+	top:20px;
+	left:25%;
+}
+#loginForm{
+	width: 50%;
+	padding: 80px;
+	box-shadow: inset 0px 0px 100px rgba(59, 160, 241, 0.897) ;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.89);
+	display:none;
+	position: absolute;
+	z-index: 2;
+	top:20px;
+	left:25%;
+}
+#forgetForm{
+	width: 50%;
+	padding: 80px;
+	box-shadow: inset 0px 0px 100px rgba(59, 160, 241, 0.897) ;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.89);
+	display:none;
+	position: absolute;
+	z-index: 2;
+	top:20px;
+	left:25%;
+}
+#loginForm input:focus{
+	box-shadow: 0px 0px 80px rgba(74, 173, 255, 0.897) ;
+}
+#send{
+	background-color: rgb(0, 255, 0);
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+}
+#send:hover{
+	box-shadow: 0px 0px 80px rgba(1, 255, 56, 0.897) ;
+}
+#login{
+	background-color: rgb(0, 132, 255);
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+}
+#login:hover{
+	box-shadow: 0px 0px 80px rgba(1, 141, 255, 0.897) ;
+}
+.close{
+	float: right;
+	margin-top: -55px;
+	margin-right: -55px;
+}
+.close img:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+#regErr, #logErr, #forgetError{
+	color:red;
+	text-shadow: 0px 0px 50px rgb(255, 0, 0);
+}
+#logOutDiv{
+	text-align: center;
+	display: none;
+}
+button > a{
+	padding:50px;
+	color:white;
+}
+button > a:hover{
+	color:white;
+	text-decoration: none;
+}
+.mess{
+    color:goldenrod;
+}
+/* .online{
+    color: rgb(14, 177, 14);
+}
+.ofline{
+    color: rgb(175, 175, 175);
+} */
+.time{
+    text-align: right;
+    float: right;
+    color: rgba(170, 170, 170, 0.692);
+    
+}
+.chat, .online{
+    border: 2px solid darkred;
+    padding: 20px 50px;
+    height: 450px;
+    overflow: auto;
+    box-shadow: inset 0px 0px 70px rgb(255, 0, 0) ;
+    background-color: black;
+    border-radius: 10px;
+    text-align: left;
+}
+#write{
+    color:rgba(146, 146, 146, 0.356);
+    text-shadow: 0px 0px 20px rgb(134, 134, 134);
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+#inpMsg{
+	width: 50%;
+	height: 45px;
+	border-radius: 10px;
+	text-indent: 10px;
+    font-size: 30px;
+    text-indent: 20px;
+    color:white;
+    border: none;
+    background-color: rgb(131, 0, 0);
+    transition: 1s;
+    box-shadow: inset 0px 0px 40px rgb(0, 0, 0) ;
+}
+#inpMsg:focus{
+    box-shadow:  0px 0px 25px rgb(206, 0, 0) ;
+    width: 70%;
+    outline: 0;
+}
+#btnSend{
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	color:white;
+	background-color: red;
+	border:none;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px rgb(0, 0, 0) ;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#btnSend:focus{
+    outline: 0;
+}
+#btnSend:hover{
+    box-shadow:  0px 0px 40px rgb(255, 0, 0) ;
+}

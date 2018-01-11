@@ -1,0 +1,97 @@
+<% layout("layout") -%>
+
+    <h1 id="result"></h1>
+    
+    <div class="btns container">
+        <button id="singUp">Sign Up</button>
+        <button id="singIn">Sign In</button>
+        <button id="forgotPassword" class="btn btn-lg btn-primary">forgot password
+
+    </div>
+
+    <div id="regForm" class="container">
+        <div class="close">
+            <img src="img/close.png" alt="close" width="50px">
+        </div>
+        <p id='regErr'>
+
+        </p>
+
+        <form method="post">
+            <div class="row">
+                <div class="col-md-5">
+                    <input id="userName" type="text" required placeholder="Name" autocomplete="off">
+                </div>
+                <div class="col-md-7">
+                    <input id="userSurname" type="text" required placeholder="Surname" autocomplete="off">
+                </div>
+            </div>
+
+            <div>
+                <input id="userEmail" type="email" required placeholder="Email" autocomplete="off">
+            </div>
+
+            <div>
+                <span>Gender</span>
+                <br>
+                <input type="radio" name="gender" value="male">
+                <span class="gender">M</span>
+                <input type="radio" name="gender" value="female">
+                <span class="gender">F</span>
+                <input type="radio" name="gender" value="other">
+                <span class="gender">Other</span>
+            </div>
+            <div>
+                <input id="userPassword" type="password" required placeholder="Password">
+                <br>
+            </div>
+            <div>
+                <input id="passConfirm" type="password" required placeholder="Confirm password">
+                <br>
+            </div>
+            <button id="send">Send</button>
+        </form>
+
+    </div>
+    <div id="logOutDiv" class="container"><button id='logOut' class="btn-warning">LogOut</button></div>
+    
+    <div id="loginForm" class="container">
+        <div class="close">
+            <img src="img/close.png" alt="close" width="50px">
+        </div>
+
+        <p id='logErr'>
+
+        </p>
+        <form  method="post" action="/users">
+            <div>
+                <input id="loginEmail" type="email" placeholder="Email" autocomplete="off" name="login">
+            </div>
+            <div>
+                <input id="loginPassword" type="password" placeholder="Password"  name="pass" >
+                <br>
+            </div>
+            <button id="login"> login</button>
+            </button>
+        </form>
+        
+    </div>
+    <div id="forgetForm" class="container">
+        <div class="close">
+            <img src="img/close.png" alt="close" width="50px">
+        </div>
+
+        <p id='forgetErr'>
+
+        </p>
+        <form  method="post" action="/users">
+            <div>
+                <input id="forgetEmail" type="email" placeholder="Email" autocomplete="off" name="login">
+                <input id="newPassword" type="password" placeholder="New Password"  name="pass" >
+            </div>
+           
+            <button id="forgot"> forgot</button>
+            </button>
+        </form>
+        
+    </div>
